@@ -1,0 +1,374 @@
+date,account_type,transaction_amount,category,department,budget,variance,transaction_id,vendor,approved_by
+2024-01-01,Expense,14502.49,Training,Operations,14919.77,-417.28,TXN19627,Vendor_26,Manager_2
+2024-01-01,Expense,10216.96,Training,HR,10713.1,-496.14,TXN40451,Vendor_37,Manager_4
+2024-01-01,Expense,19385.82,Marketing,Operations,18195.81,1190.01,TXN48098,Vendor_34,Manager_7
+2024-01-01,Revenue,368060.4,Equipment,Operations,294448.32,73612.08,TXN99276,Vendor_11,Manager_2
+2024-01-01,Expense,10594.01,Equipment,Sales,11425.88,-831.87,TXN68122,Vendor_2,Manager_9
+2024-01-01,Investment,64699.59,Professional Services,Engineering,64699.59,0.0,TXN11494,Vendor_22,Manager_6
+2024-01-01,Revenue,433161.96,Training,HR,346529.56,86632.39,TXN47851,Vendor_27,Manager_5
+2024-01-01,Investment,45412.37,Salaries,Operations,45412.37,0.0,TXN27189,Vendor_44,Manager_5
+2024-01-01,Revenue,471545.66,Office Rent,Marketing,377236.53,94309.13,TXN90366,Vendor_13,Manager_3
+2024-01-01,Expense,15673.24,Professional Services,Finance,14957.41,715.82,TXN12698,Vendor_29,Manager_5
+2024-01-01,Expense,15041.77,Miscellaneous,Marketing,14930.38,111.39,TXN53787,Vendor_12,Manager_4
+2024-01-01,Expense,2473.81,Travel,HR,2532.23,-58.42,TXN33968,Vendor_17,Manager_3
+2024-01-01,Expense,16604.73,Office Rent,Engineering,17473.05,-868.33,TXN27057,Vendor_37,Manager_9
+2024-01-01,Expense,122311.84,Salaries,Engineering,127902.53,-5590.69,TXN82232,Vendor_36,Manager_2
+2024-01-01,Expense,1899.53,Miscellaneous,Marketing,1749.17,150.36,TXN12802,Vendor_47,Manager_9
+2024-01-01,Investment,54206.49,Salaries,Sales,54206.49,0.0,TXN95234,Vendor_11,Manager_8
+2024-01-01,Expense,8106.1,Professional Services,Engineering,8333.97,-227.87,TXN92485,Vendor_36,Manager_1
+2024-01-01,Expense,7492.27,Travel,HR,6884.12,608.15,TXN19714,Vendor_19,Manager_5
+2024-01-01,Expense,1799.25,Travel,Engineering,1669.28,129.97,TXN55600,Vendor_46,Manager_2
+2024-01-01,Expense,8031.18,Utilities,Sales,8519.28,-488.1,TXN68081,Vendor_4,Manager_3
+2024-01-01,Revenue,347757.96,Training,Marketing,278206.37,69551.59,TXN38568,Vendor_33,Manager_5
+2024-01-01,Revenue,86383.41,Software/Tools,Operations,69106.73,17276.68,TXN21394,Vendor_5,Manager_8
+2024-01-01,Investment,22793.9,Travel,Sales,22793.9,0.0,TXN62600,Vendor_39,Manager_8
+2024-01-01,Revenue,163373.1,Miscellaneous,HR,130698.48,32674.62,TXN22093,Vendor_45,Manager_4
+2024-01-01,Expense,9777.01,Training,Sales,9152.53,624.48,TXN56794,Vendor_11,Manager_3
+2024-01-01,Expense,15126.5,Professional Services,Marketing,15416.67,-290.17,TXN62915,Vendor_45,Manager_2
+2024-01-01,Expense,11322.81,Miscellaneous,Finance,12431.21,-1108.39,TXN44446,Vendor_33,Manager_7
+2024-01-31,Expense,196698.69,Salaries,Engineering,214264.12,-17565.43,TXN25362,Vendor_44,Manager_3
+2024-01-31,Investment,47670.9,Software/Tools,Sales,47670.9,0.0,TXN69126,Vendor_12,Manager_4
+2024-01-31,Revenue,464309.8,Travel,Engineering,371447.84,92861.96,TXN70302,Vendor_47,Manager_8
+2024-01-31,Expense,6314.21,Professional Services,Sales,6088.31,225.89,TXN78866,Vendor_4,Manager_2
+2024-01-31,Revenue,445126.08,Marketing,Sales,356100.86,89025.22,TXN52722,Vendor_1,Manager_3
+2024-01-31,Expense,3665.36,Utilities,Operations,3415.89,249.47,TXN49237,Vendor_11,Manager_1
+2024-01-31,Expense,28344.42,Office Rent,Finance,28287.25,57.16,TXN77561,Vendor_37,Manager_5
+2024-01-31,Revenue,420507.12,Utilities,Operations,336405.7,84101.42,TXN54230,Vendor_43,Manager_8
+2024-01-31,Expense,14114.99,Training,Operations,14792.52,-677.54,TXN97327,Vendor_2,Manager_4
+2024-01-31,Expense,67443.56,Marketing,Engineering,68027.19,-583.63,TXN38436,Vendor_18,Manager_3
+2024-01-31,Revenue,121968.07,Training,Operations,97574.45,24393.61,TXN98015,Vendor_28,Manager_6
+2024-01-31,Expense,3937.64,Utilities,Operations,3755.39,182.25,TXN33557,Vendor_48,Manager_6
+2024-01-31,Expense,3785.37,Software/Tools,HR,3903.53,-118.16,TXN74618,Vendor_13,Manager_1
+2024-01-31,Revenue,305059.93,Travel,Marketing,244047.94,61011.99,TXN69216,Vendor_37,Manager_3
+2024-01-31,Expense,15327.48,Office Rent,Marketing,16840.7,-1513.22,TXN25905,Vendor_19,Manager_1
+2024-01-31,Revenue,495089.75,Training,Sales,396071.8,99017.95,TXN43061,Vendor_26,Manager_3
+2024-01-31,Expense,13331.69,Software/Tools,Marketing,14644.22,-1312.53,TXN62627,Vendor_6,Manager_3
+2024-01-31,Investment,74125.76,Salaries,Sales,74125.76,0.0,TXN13088,Vendor_10,Manager_3
+2024-01-31,Investment,47063.71,Professional Services,Operations,47063.71,0.0,TXN28481,Vendor_10,Manager_7
+2024-01-31,Expense,8851.77,Software/Tools,Finance,8836.32,15.45,TXN72055,Vendor_34,Manager_2
+2024-01-31,Expense,16578.11,Training,Finance,16635.58,-57.47,TXN52942,Vendor_4,Manager_3
+2024-01-31,Expense,13260.81,Software/Tools,Engineering,12324.43,936.38,TXN41584,Vendor_14,Manager_8
+2024-01-31,Revenue,200657.99,Office Rent,Sales,160526.39,40131.6,TXN78742,Vendor_13,Manager_9
+2024-01-31,Expense,129876.99,Salaries,Marketing,118759.05,11117.94,TXN65610,Vendor_10,Manager_7
+2024-01-31,Expense,11015.94,Equipment,Marketing,10151.02,864.92,TXN75245,Vendor_40,Manager_2
+2024-01-31,Revenue,237676.5,Equipment,Finance,190141.2,47535.3,TXN58906,Vendor_12,Manager_8
+2024-01-31,Expense,13375.46,Professional Services,Engineering,14635.14,-1259.68,TXN92121,Vendor_29,Manager_9
+2024-01-31,Expense,2954.85,Professional Services,Engineering,3141.69,-186.84,TXN69222,Vendor_25,Manager_2
+2024-01-31,Expense,6053.47,Miscellaneous,HR,5973.53,79.94,TXN33161,Vendor_41,Manager_2
+2024-03-01,Expense,14146.26,Professional Services,Finance,13112.99,1033.26,TXN78622,Vendor_36,Manager_3
+2024-03-01,Expense,2097.8,Professional Services,Engineering,1917.51,180.29,TXN11229,Vendor_18,Manager_4
+2024-03-01,Revenue,488414.64,Salaries,HR,390731.71,97682.93,TXN82853,Vendor_1,Manager_3
+2024-03-01,Expense,12131.76,Utilities,Finance,12360.97,-229.2,TXN69823,Vendor_17,Manager_7
+2024-03-01,Investment,24836.56,Marketing,Operations,24836.56,0.0,TXN96352,Vendor_44,Manager_7
+2024-03-01,Expense,12826.43,Software/Tools,Finance,11676.88,1149.55,TXN84060,Vendor_20,Manager_2
+2024-03-01,Revenue,264546.73,Marketing,Engineering,211637.39,52909.35,TXN23277,Vendor_15,Manager_7
+2024-03-01,Expense,16390.1,Professional Services,Operations,17248.69,-858.59,TXN63433,Vendor_5,Manager_2
+2024-03-01,Expense,8013.58,Utilities,Engineering,8011.84,1.74,TXN23764,Vendor_40,Manager_4
+2024-03-01,Expense,7298.61,Travel,Marketing,7992.18,-693.58,TXN57210,Vendor_17,Manager_3
+2024-03-01,Expense,10966.26,Software/Tools,Sales,11283.63,-317.37,TXN12063,Vendor_42,Manager_9
+2024-03-01,Expense,13178.89,Utilities,Operations,11866.49,1312.4,TXN79285,Vendor_38,Manager_9
+2024-03-01,Expense,11011.39,Software/Tools,Operations,11104.8,-93.4,TXN97157,Vendor_22,Manager_8
+2024-03-01,Investment,44480.43,Training,Finance,44480.43,0.0,TXN55306,Vendor_37,Manager_3
+2024-03-01,Expense,21009.43,Office Rent,Marketing,19195.81,1813.61,TXN86981,Vendor_26,Manager_8
+2024-03-01,Revenue,145898.79,Marketing,Engineering,116719.03,29179.76,TXN22920,Vendor_33,Manager_9
+2024-03-01,Expense,8036.61,Equipment,Finance,7825.94,210.67,TXN80779,Vendor_22,Manager_6
+2024-03-01,Expense,21164.47,Office Rent,Finance,20393.0,771.47,TXN90420,Vendor_32,Manager_8
+2024-03-01,Expense,13447.22,Travel,Marketing,14374.26,-927.04,TXN42225,Vendor_38,Manager_8
+2024-03-01,Expense,142165.51,Salaries,Finance,130677.35,11488.15,TXN75137,Vendor_45,Manager_9
+2024-03-01,Expense,2663.88,Software/Tools,HR,2661.38,2.5,TXN77680,Vendor_7,Manager_1
+2024-03-01,Expense,14250.29,Utilities,HR,13794.3,455.98,TXN36451,Vendor_14,Manager_6
+2024-03-01,Expense,104874.88,Salaries,Operations,101687.78,3187.1,TXN31817,Vendor_41,Manager_8
+2024-03-01,Revenue,115272.79,Utilities,Marketing,92218.23,23054.56,TXN41155,Vendor_30,Manager_5
+2024-03-01,Revenue,244056.65,Software/Tools,Marketing,195245.32,48811.33,TXN28006,Vendor_19,Manager_3
+2024-03-01,Revenue,196547.6,Equipment,Finance,157238.08,39309.52,TXN47220,Vendor_35,Manager_1
+2024-03-01,Revenue,214454.37,Miscellaneous,Engineering,171563.5,42890.87,TXN76326,Vendor_44,Manager_1
+2024-03-01,Revenue,484250.09,Marketing,Marketing,387400.08,96850.02,TXN95099,Vendor_44,Manager_5
+2024-03-01,Expense,76552.47,Marketing,Engineering,74509.12,2043.35,TXN36403,Vendor_37,Manager_9
+2024-03-01,Revenue,421199.12,Salaries,HR,336959.29,84239.82,TXN28464,Vendor_8,Manager_7
+2024-03-01,Expense,19115.57,Utilities,HR,17823.19,1292.37,TXN76689,Vendor_13,Manager_6
+2024-03-01,Investment,74074.19,Professional Services,Marketing,74074.19,0.0,TXN17536,Vendor_32,Manager_9
+2024-03-01,Expense,16049.6,Training,HR,16139.71,-90.11,TXN86323,Vendor_23,Manager_9
+2024-03-01,Expense,13414.57,Utilities,Engineering,13396.08,18.49,TXN79345,Vendor_33,Manager_2
+2024-03-01,Expense,6448.05,Software/Tools,Operations,6418.21,29.84,TXN43095,Vendor_44,Manager_7
+2024-03-01,Expense,16694.9,Software/Tools,Finance,15639.43,1055.46,TXN51193,Vendor_13,Manager_9
+2024-03-01,Expense,2089.16,Travel,Marketing,2180.45,-91.29,TXN60382,Vendor_20,Manager_4
+2024-03-01,Investment,72561.79,Professional Services,HR,72561.79,0.0,TXN83490,Vendor_32,Manager_6
+2024-03-31,Expense,183065.31,Salaries,Sales,175780.26,7285.04,TXN95573,Vendor_6,Manager_2
+2024-03-31,Investment,49736.47,Salaries,HR,49736.47,0.0,TXN28148,Vendor_31,Manager_3
+2024-03-31,Investment,53970.67,Salaries,HR,53970.67,0.0,TXN17053,Vendor_39,Manager_3
+2024-03-31,Expense,7049.13,Miscellaneous,Operations,7061.67,-12.54,TXN70108,Vendor_44,Manager_3
+2024-03-31,Revenue,197040.05,Travel,Marketing,157632.04,39408.01,TXN19876,Vendor_28,Manager_9
+2024-03-31,Revenue,196002.79,Marketing,Operations,156802.24,39200.56,TXN74441,Vendor_23,Manager_3
+2024-03-31,Revenue,233423.69,Training,HR,186738.95,46684.74,TXN35048,Vendor_6,Manager_2
+2024-03-31,Expense,16638.38,Equipment,HR,16220.98,417.4,TXN21452,Vendor_28,Manager_5
+2024-03-31,Investment,94437.9,Utilities,Finance,94437.9,0.0,TXN32953,Vendor_27,Manager_7
+2024-03-31,Expense,3684.94,Travel,Marketing,3544.16,140.78,TXN48627,Vendor_2,Manager_8
+2024-03-31,Expense,28713.93,Office Rent,Marketing,26011.18,2702.75,TXN14453,Vendor_45,Manager_6
+2024-03-31,Expense,2701.54,Miscellaneous,Sales,2556.9,144.64,TXN80514,Vendor_14,Manager_8
+2024-03-31,Expense,14318.86,Utilities,HR,13881.96,436.9,TXN82082,Vendor_43,Manager_5
+2024-03-31,Revenue,374829.24,Salaries,Operations,299863.39,74965.85,TXN37228,Vendor_25,Manager_1
+2024-03-31,Expense,21026.91,Marketing,Marketing,21166.62,-139.71,TXN59314,Vendor_36,Manager_7
+2024-03-31,Revenue,136572.43,Training,Marketing,109257.95,27314.49,TXN20541,Vendor_29,Manager_5
+2024-03-31,Investment,99821.42,Miscellaneous,Marketing,99821.42,0.0,TXN22199,Vendor_41,Manager_8
+2024-03-31,Expense,16861.24,Office Rent,Operations,17902.02,-1040.78,TXN17636,Vendor_5,Manager_3
+2024-03-31,Expense,10803.7,Utilities,Finance,10818.31,-14.61,TXN40398,Vendor_12,Manager_9
+2024-03-31,Expense,14018.39,Equipment,Marketing,14874.96,-856.57,TXN18190,Vendor_21,Manager_8
+2024-03-31,Expense,45098.22,Marketing,HR,46207.71,-1109.48,TXN86706,Vendor_4,Manager_3
+2024-03-31,Expense,14857.11,Miscellaneous,HR,14074.75,782.36,TXN33350,Vendor_19,Manager_3
+2024-03-31,Revenue,194897.25,Marketing,Engineering,155917.8,38979.45,TXN49218,Vendor_35,Manager_5
+2024-03-31,Expense,6594.04,Travel,Engineering,6025.27,568.77,TXN10334,Vendor_47,Manager_1
+2024-03-31,Investment,84182.92,Office Rent,Sales,84182.92,0.0,TXN79433,Vendor_23,Manager_6
+2024-03-31,Revenue,413156.14,Equipment,Engineering,330524.91,82631.23,TXN90880,Vendor_11,Manager_2
+2024-03-31,Expense,9028.69,Equipment,Marketing,8290.09,738.6,TXN68475,Vendor_35,Manager_5
+2024-03-31,Expense,8521.79,Professional Services,Operations,8006.1,515.69,TXN60873,Vendor_33,Manager_7
+2024-04-30,Revenue,123038.53,Marketing,Operations,98430.82,24607.71,TXN30830,Vendor_5,Manager_2
+2024-04-30,Revenue,266412.95,Training,Operations,213130.36,53282.59,TXN42425,Vendor_35,Manager_9
+2024-04-30,Expense,12529.35,Training,Sales,12922.64,-393.29,TXN98604,Vendor_22,Manager_7
+2024-04-30,Expense,4805.1,Training,Marketing,4636.04,169.06,TXN96498,Vendor_24,Manager_1
+2024-04-30,Expense,4648.67,Miscellaneous,Finance,4213.71,434.96,TXN79440,Vendor_44,Manager_6
+2024-04-30,Revenue,379811.43,Utilities,Engineering,303849.15,75962.29,TXN71936,Vendor_45,Manager_9
+2024-04-30,Expense,18805.14,Office Rent,Sales,17839.89,965.25,TXN36065,Vendor_21,Manager_7
+2024-04-30,Revenue,85112.9,Salaries,HR,68090.32,17022.58,TXN63796,Vendor_14,Manager_8
+2024-04-30,Expense,6228.59,Equipment,HR,6599.56,-370.96,TXN51184,Vendor_39,Manager_3
+2024-04-30,Expense,13477.36,Travel,Finance,13402.27,75.09,TXN10310,Vendor_9,Manager_5
+2024-04-30,Revenue,482194.21,Salaries,Operations,385755.37,96438.84,TXN99937,Vendor_38,Manager_1
+2024-04-30,Expense,12891.72,Software/Tools,Finance,13495.43,-603.71,TXN76112,Vendor_25,Manager_6
+2024-04-30,Expense,9253.5,Training,Finance,8717.17,536.33,TXN87558,Vendor_25,Manager_5
+2024-04-30,Expense,13839.03,Software/Tools,HR,13049.23,789.81,TXN92481,Vendor_26,Manager_8
+2024-04-30,Expense,113026.39,Salaries,Sales,120266.28,-7239.89,TXN46549,Vendor_36,Manager_2
+2024-04-30,Revenue,82766.96,Miscellaneous,Marketing,66213.57,16553.39,TXN19866,Vendor_8,Manager_9
+2024-04-30,Expense,111613.21,Salaries,Finance,114143.93,-2530.72,TXN68719,Vendor_15,Manager_5
+2024-04-30,Expense,19288.82,Equipment,HR,17955.97,1332.85,TXN32114,Vendor_25,Manager_2
+2024-04-30,Revenue,103487.52,Training,Finance,82790.02,20697.5,TXN54031,Vendor_2,Manager_4
+2024-04-30,Investment,61331.93,Office Rent,Sales,61331.93,0.0,TXN85705,Vendor_7,Manager_3
+2024-04-30,Expense,165089.31,Salaries,HR,167996.27,-2906.96,TXN20589,Vendor_4,Manager_2
+2024-04-30,Expense,22827.91,Marketing,HR,24071.01,-1243.1,TXN98096,Vendor_3,Manager_4
+2024-04-30,Expense,7124.4,Utilities,Finance,7438.54,-314.14,TXN81447,Vendor_28,Manager_9
+2024-04-30,Expense,8528.23,Travel,Operations,7901.96,626.27,TXN40898,Vendor_1,Manager_5
+2024-04-30,Expense,5897.72,Software/Tools,HR,5499.61,398.11,TXN77487,Vendor_3,Manager_4
+2024-04-30,Expense,17302.58,Training,Finance,16230.6,1071.98,TXN93330,Vendor_35,Manager_2
+2024-04-30,Expense,4704.23,Utilities,Marketing,4715.73,-11.5,TXN62621,Vendor_2,Manager_6
+2024-04-30,Expense,14083.33,Marketing,HR,13108.04,975.29,TXN47236,Vendor_43,Manager_1
+2024-04-30,Expense,16311.86,Professional Services,Marketing,14784.81,1527.05,TXN82838,Vendor_13,Manager_7
+2024-04-30,Expense,14632.07,Miscellaneous,Marketing,14680.66,-48.59,TXN51226,Vendor_16,Manager_5
+2024-04-30,Expense,15910.74,Miscellaneous,Sales,16386.44,-475.7,TXN24530,Vendor_31,Manager_7
+2024-04-30,Expense,12863.14,Training,Sales,11746.18,1116.96,TXN61496,Vendor_11,Manager_3
+2024-04-30,Expense,19609.39,Equipment,Operations,18081.2,1528.19,TXN24412,Vendor_38,Manager_3
+2024-04-30,Revenue,140004.77,Equipment,Sales,112003.81,28000.95,TXN93775,Vendor_16,Manager_4
+2024-04-30,Investment,65523.66,Salaries,HR,65523.66,0.0,TXN82939,Vendor_11,Manager_9
+2024-04-30,Expense,12804.64,Equipment,Operations,11643.37,1161.28,TXN96525,Vendor_39,Manager_1
+2024-04-30,Revenue,298469.22,Miscellaneous,Finance,238775.38,59693.84,TXN66997,Vendor_46,Manager_3
+2024-04-30,Expense,12350.64,Training,Sales,11766.31,584.33,TXN47448,Vendor_19,Manager_8
+2024-04-30,Expense,16604.06,Software/Tools,Finance,15598.85,1005.22,TXN64994,Vendor_6,Manager_5
+2024-05-30,Expense,9173.12,Professional Services,HR,8289.92,883.2,TXN10382,Vendor_37,Manager_2
+2024-05-30,Expense,11111.54,Miscellaneous,Sales,10148.19,963.35,TXN57883,Vendor_23,Manager_4
+2024-05-30,Revenue,90747.36,Training,Sales,72597.89,18149.47,TXN81341,Vendor_16,Manager_2
+2024-05-30,Expense,8599.9,Travel,Marketing,8965.83,-365.93,TXN18505,Vendor_19,Manager_2
+2024-05-30,Expense,5614.43,Professional Services,Sales,5239.68,374.75,TXN63273,Vendor_1,Manager_1
+2024-05-30,Expense,29027.87,Office Rent,Marketing,28080.95,946.91,TXN44936,Vendor_37,Manager_5
+2024-05-30,Investment,13507.31,Travel,Engineering,13507.31,0.0,TXN84432,Vendor_49,Manager_4
+2024-05-30,Revenue,248574.23,Salaries,Marketing,198859.39,49714.85,TXN62984,Vendor_25,Manager_9
+2024-05-30,Expense,9722.2,Software/Tools,Sales,10625.42,-903.22,TXN32594,Vendor_25,Manager_7
+2024-05-30,Expense,19887.37,Professional Services,Engineering,18091.59,1795.78,TXN60014,Vendor_4,Manager_4
+2024-05-30,Revenue,103440.01,Professional Services,HR,82752.01,20688.0,TXN95161,Vendor_8,Manager_2
+2024-05-30,Expense,24725.17,Office Rent,HR,25723.91,-998.74,TXN39114,Vendor_28,Manager_8
+2024-05-30,Expense,19651.33,Travel,Marketing,20582.41,-931.09,TXN14675,Vendor_43,Manager_6
+2024-05-30,Expense,11501.22,Professional Services,Marketing,12362.52,-861.3,TXN99692,Vendor_21,Manager_9
+2024-05-30,Expense,23255.51,Marketing,Sales,23649.83,-394.32,TXN49855,Vendor_13,Manager_3
+2024-05-30,Expense,4114.43,Equipment,Finance,4253.33,-138.9,TXN43179,Vendor_22,Manager_4
+2024-05-30,Expense,17513.44,Office Rent,Sales,16441.73,1071.72,TXN21697,Vendor_5,Manager_6
+2024-05-30,Investment,17722.27,Utilities,Sales,17722.27,0.0,TXN11149,Vendor_9,Manager_7
+2024-05-30,Expense,75434.09,Marketing,HR,74085.07,1349.02,TXN70309,Vendor_36,Manager_2
+2024-05-30,Expense,18633.02,Professional Services,Sales,17421.41,1211.61,TXN96467,Vendor_42,Manager_4
+2024-05-30,Expense,2608.35,Miscellaneous,Sales,2843.22,-234.87,TXN20623,Vendor_1,Manager_2
+2024-05-30,Investment,44084.53,Equipment,Marketing,44084.53,0.0,TXN63452,Vendor_45,Manager_2
+2024-05-30,Expense,4050.52,Miscellaneous,Finance,3799.4,251.13,TXN79020,Vendor_30,Manager_2
+2024-05-30,Expense,4116.2,Equipment,Operations,4479.11,-362.91,TXN92839,Vendor_11,Manager_1
+2024-05-30,Expense,18094.28,Training,Marketing,16822.49,1271.79,TXN97081,Vendor_39,Manager_2
+2024-05-30,Revenue,185202.86,Salaries,Engineering,148162.28,37040.57,TXN42973,Vendor_31,Manager_2
+2024-05-30,Expense,13072.66,Professional Services,Operations,12595.93,476.73,TXN34654,Vendor_31,Manager_5
+2024-05-30,Expense,3143.06,Equipment,HR,2926.89,216.17,TXN84842,Vendor_34,Manager_1
+2024-05-30,Revenue,235522.64,Software/Tools,Engineering,188418.11,47104.53,TXN20603,Vendor_27,Manager_8
+2024-05-30,Expense,16740.28,Office Rent,Operations,15376.4,1363.88,TXN50068,Vendor_44,Manager_2
+2024-06-29,Expense,16004.9,Software/Tools,Marketing,17252.07,-1247.17,TXN13801,Vendor_18,Manager_7
+2024-06-29,Expense,6989.77,Software/Tools,Finance,6564.62,425.16,TXN61694,Vendor_35,Manager_6
+2024-06-29,Expense,19602.03,Professional Services,Engineering,17871.72,1730.31,TXN30420,Vendor_21,Manager_6
+2024-06-29,Expense,1959.1,Travel,HR,2111.62,-152.52,TXN11662,Vendor_15,Manager_6
+2024-06-29,Expense,8181.29,Travel,Marketing,8861.29,-680.0,TXN87431,Vendor_4,Manager_3
+2024-06-29,Expense,25422.65,Marketing,Engineering,25632.4,-209.75,TXN46760,Vendor_3,Manager_8
+2024-06-29,Revenue,424274.51,Equipment,Finance,339419.61,84854.9,TXN94905,Vendor_9,Manager_8
+2024-06-29,Revenue,60989.05,Utilities,Marketing,48791.24,12197.81,TXN18422,Vendor_4,Manager_6
+2024-06-29,Expense,165661.69,Salaries,HR,179898.21,-14236.52,TXN45671,Vendor_10,Manager_4
+2024-06-29,Expense,2995.53,Software/Tools,Engineering,2953.81,41.73,TXN80210,Vendor_7,Manager_9
+2024-06-29,Expense,18830.2,Training,Marketing,20646.56,-1816.36,TXN81092,Vendor_6,Manager_7
+2024-06-29,Revenue,305837.74,Miscellaneous,Engineering,244670.19,61167.55,TXN29186,Vendor_29,Manager_8
+2024-06-29,Expense,97584.39,Salaries,Engineering,105423.6,-7839.22,TXN29787,Vendor_10,Manager_8
+2024-06-29,Investment,99779.3,Training,Marketing,99779.3,0.0,TXN64703,Vendor_3,Manager_9
+2024-06-29,Expense,16321.61,Professional Services,Engineering,16432.45,-110.84,TXN63622,Vendor_16,Manager_2
+2024-06-29,Expense,193172.97,Salaries,Engineering,184155.56,9017.41,TXN62479,Vendor_42,Manager_8
+2024-06-29,Expense,15454.74,Software/Tools,Engineering,14318.25,1136.49,TXN58646,Vendor_28,Manager_9
+2024-06-29,Expense,153811.2,Salaries,Sales,152197.62,1613.59,TXN27757,Vendor_1,Manager_3
+2024-06-29,Expense,12212.06,Utilities,Sales,11105.42,1106.64,TXN42719,Vendor_38,Manager_8
+2024-06-29,Expense,101944.91,Salaries,Operations,108130.47,-6185.56,TXN45301,Vendor_26,Manager_9
+2024-06-29,Expense,9547.9,Utilities,Finance,10176.63,-628.74,TXN68171,Vendor_9,Manager_9
+2024-06-29,Expense,155317.02,Salaries,Marketing,152058.49,3258.53,TXN33982,Vendor_26,Manager_6
+2024-06-29,Expense,7496.67,Utilities,HR,7541.06,-44.39,TXN60296,Vendor_15,Manager_6
+2024-06-29,Expense,13218.78,Professional Services,Sales,13713.79,-495.01,TXN32148,Vendor_25,Manager_4
+2024-06-29,Expense,70163.64,Marketing,Sales,69208.29,955.34,TXN19525,Vendor_6,Manager_5
+2024-06-29,Expense,18393.58,Utilities,Marketing,17403.46,990.11,TXN61826,Vendor_17,Manager_4
+2024-06-29,Expense,18019.11,Utilities,Sales,18669.78,-650.67,TXN75045,Vendor_9,Manager_6
+2024-06-29,Expense,1648.47,Equipment,Sales,1532.25,116.22,TXN62088,Vendor_28,Manager_6
+2024-07-29,Expense,14982.91,Marketing,Engineering,15558.93,-576.02,TXN26296,Vendor_46,Manager_7
+2024-07-29,Revenue,271107.52,Software/Tools,Sales,216886.01,54221.5,TXN80156,Vendor_36,Manager_8
+2024-07-29,Expense,31396.49,Marketing,Operations,29753.73,1642.75,TXN81067,Vendor_13,Manager_1
+2024-07-29,Revenue,172056.75,Office Rent,Marketing,137645.4,34411.35,TXN74263,Vendor_3,Manager_9
+2024-07-29,Expense,25617.75,Office Rent,HR,26642.31,-1024.57,TXN73712,Vendor_36,Manager_3
+2024-07-29,Expense,1458.67,Miscellaneous,Finance,1385.7,72.97,TXN98035,Vendor_39,Manager_1
+2024-07-29,Expense,25951.7,Office Rent,Marketing,26593.44,-641.74,TXN17644,Vendor_24,Manager_1
+2024-07-29,Expense,29796.33,Office Rent,Finance,32585.57,-2789.24,TXN46003,Vendor_35,Manager_2
+2024-07-29,Expense,1796.78,Professional Services,Marketing,1686.26,110.52,TXN76311,Vendor_15,Manager_6
+2024-07-29,Expense,16063.01,Miscellaneous,Operations,17493.65,-1430.65,TXN24756,Vendor_44,Manager_8
+2024-07-29,Expense,17993.0,Utilities,HR,16429.95,1563.05,TXN23322,Vendor_26,Manager_8
+2024-07-29,Revenue,338881.65,Software/Tools,Marketing,271105.32,67776.33,TXN67483,Vendor_13,Manager_5
+2024-07-29,Expense,15942.94,Office Rent,HR,15575.71,367.23,TXN29880,Vendor_19,Manager_7
+2024-07-29,Investment,78061.05,Miscellaneous,HR,78061.05,0.0,TXN18969,Vendor_22,Manager_7
+2024-07-29,Expense,6958.89,Professional Services,Marketing,7431.15,-472.26,TXN14014,Vendor_31,Manager_9
+2024-07-29,Expense,44449.38,Marketing,HR,44608.7,-159.32,TXN12661,Vendor_29,Manager_2
+2024-07-29,Investment,68446.04,Utilities,Finance,68446.04,0.0,TXN52280,Vendor_44,Manager_9
+2024-07-29,Revenue,296639.09,Miscellaneous,Marketing,237311.27,59327.82,TXN48508,Vendor_46,Manager_3
+2024-07-29,Expense,10561.4,Equipment,HR,11445.8,-884.39,TXN94498,Vendor_3,Manager_3
+2024-07-29,Revenue,191534.88,Utilities,Sales,153227.9,38306.98,TXN13268,Vendor_26,Manager_3
+2024-07-29,Expense,139761.25,Salaries,Marketing,130960.53,8800.72,TXN48557,Vendor_48,Manager_9
+2024-07-29,Expense,113034.82,Salaries,Marketing,115179.45,-2144.63,TXN19997,Vendor_14,Manager_1
+2024-07-29,Expense,19858.02,Equipment,Finance,21086.78,-1228.76,TXN70952,Vendor_17,Manager_6
+2024-07-29,Expense,14892.91,Miscellaneous,HR,14209.76,683.14,TXN13741,Vendor_2,Manager_4
+2024-07-29,Expense,15615.75,Equipment,Sales,14550.46,1065.29,TXN68788,Vendor_44,Manager_6
+2024-07-29,Revenue,63176.62,Utilities,Sales,50541.3,12635.32,TXN35319,Vendor_39,Manager_1
+2024-07-29,Revenue,262051.14,Miscellaneous,HR,209640.91,52410.23,TXN24905,Vendor_14,Manager_9
+2024-07-29,Expense,21665.9,Office Rent,Sales,23747.93,-2082.04,TXN39733,Vendor_41,Manager_9
+2024-07-29,Revenue,433060.76,Professional Services,Sales,346448.6,86612.15,TXN74322,Vendor_1,Manager_6
+2024-07-29,Expense,13686.26,Training,HR,14091.27,-405.02,TXN38972,Vendor_2,Manager_6
+2024-07-29,Revenue,347974.41,Utilities,Marketing,278379.53,69594.88,TXN12414,Vendor_17,Manager_8
+2024-07-29,Expense,16129.29,Professional Services,Sales,15964.01,165.28,TXN37382,Vendor_31,Manager_1
+2024-07-29,Investment,85629.67,Salaries,HR,85629.67,0.0,TXN22097,Vendor_47,Manager_5
+2024-07-29,Expense,19407.64,Software/Tools,Marketing,21240.96,-1833.32,TXN12469,Vendor_15,Manager_2
+2024-07-29,Revenue,150436.83,Miscellaneous,Finance,120349.47,30087.37,TXN57526,Vendor_15,Manager_7
+2024-07-29,Expense,10640.49,Miscellaneous,Engineering,11145.73,-505.23,TXN51969,Vendor_24,Manager_6
+2024-08-28,Expense,13117.49,Travel,Marketing,12235.01,882.49,TXN99227,Vendor_5,Manager_7
+2024-08-28,Investment,44781.47,Equipment,Operations,44781.47,0.0,TXN28156,Vendor_37,Manager_5
+2024-08-28,Investment,62848.19,Miscellaneous,Operations,62848.19,0.0,TXN97218,Vendor_16,Manager_2
+2024-08-28,Revenue,140292.51,Training,Operations,112234.01,28058.5,TXN59554,Vendor_32,Manager_9
+2024-08-28,Expense,121299.62,Salaries,Marketing,115974.68,5324.94,TXN95324,Vendor_11,Manager_6
+2024-08-28,Expense,14041.83,Equipment,Engineering,13627.77,414.06,TXN87764,Vendor_24,Manager_8
+2024-08-28,Expense,85339.33,Salaries,Sales,88723.36,-3384.03,TXN98121,Vendor_24,Manager_2
+2024-08-28,Revenue,306437.48,Travel,HR,245149.99,61287.5,TXN51920,Vendor_14,Manager_9
+2024-08-28,Revenue,259603.51,Software/Tools,HR,207682.81,51920.7,TXN33036,Vendor_20,Manager_5
+2024-08-28,Expense,9806.4,Miscellaneous,Finance,9360.64,445.76,TXN51382,Vendor_48,Manager_6
+2024-08-28,Expense,14941.29,Miscellaneous,Sales,15665.98,-724.69,TXN54142,Vendor_39,Manager_7
+2024-08-28,Expense,87834.47,Salaries,Marketing,89326.52,-1492.04,TXN75082,Vendor_10,Manager_3
+2024-08-28,Expense,5316.03,Professional Services,Marketing,4868.91,447.12,TXN30447,Vendor_6,Manager_4
+2024-08-28,Expense,6734.79,Equipment,Engineering,6951.4,-216.6,TXN98440,Vendor_4,Manager_8
+2024-08-28,Expense,7695.66,Travel,HR,8189.57,-493.91,TXN92055,Vendor_13,Manager_4
+2024-08-28,Expense,24866.06,Office Rent,Finance,26190.41,-1324.36,TXN13662,Vendor_10,Manager_1
+2024-08-28,Expense,112340.56,Salaries,Engineering,115716.25,-3375.69,TXN46191,Vendor_37,Manager_6
+2024-08-28,Expense,6343.93,Software/Tools,HR,6869.2,-525.28,TXN90909,Vendor_13,Manager_4
+2024-08-28,Investment,10690.89,Miscellaneous,Finance,10690.89,0.0,TXN54649,Vendor_15,Manager_8
+2024-08-28,Revenue,55390.92,Office Rent,Marketing,44312.74,11078.18,TXN14641,Vendor_39,Manager_3
+2024-08-28,Investment,14643.83,Equipment,Finance,14643.83,0.0,TXN57545,Vendor_26,Manager_6
+2024-08-28,Revenue,421736.93,Professional Services,HR,337389.55,84347.39,TXN57859,Vendor_11,Manager_5
+2024-08-28,Expense,19644.5,Miscellaneous,Engineering,18093.66,1550.84,TXN75924,Vendor_24,Manager_9
+2024-08-28,Expense,1831.28,Equipment,Engineering,1961.94,-130.65,TXN16630,Vendor_17,Manager_9
+2024-08-28,Expense,6509.91,Professional Services,Operations,5982.88,527.03,TXN39644,Vendor_16,Manager_8
+2024-08-28,Expense,3262.4,Utilities,Marketing,2958.62,303.77,TXN81057,Vendor_32,Manager_1
+2024-08-28,Expense,9464.23,Miscellaneous,Sales,9495.79,-31.56,TXN33656,Vendor_25,Manager_9
+2024-08-28,Expense,3192.87,Miscellaneous,Finance,2954.84,238.03,TXN91588,Vendor_19,Manager_7
+2024-08-28,Expense,14323.67,Miscellaneous,HR,13457.22,866.45,TXN59411,Vendor_48,Manager_8
+2024-08-28,Expense,11615.55,Professional Services,Finance,11011.76,603.79,TXN29361,Vendor_21,Manager_9
+2024-08-28,Expense,16752.54,Utilities,Engineering,17695.8,-943.26,TXN18221,Vendor_26,Manager_6
+2024-08-28,Expense,3268.29,Equipment,Finance,3046.71,221.58,TXN16889,Vendor_9,Manager_3
+2024-08-28,Expense,8101.24,Travel,HR,8004.16,97.08,TXN94990,Vendor_45,Manager_4
+2024-08-28,Expense,160103.36,Salaries,HR,175307.02,-15203.66,TXN60228,Vendor_31,Manager_9
+2024-09-27,Investment,62420.98,Salaries,Operations,62420.98,0.0,TXN35209,Vendor_45,Manager_7
+2024-09-27,Expense,4263.55,Software/Tools,Marketing,3845.9,417.65,TXN23771,Vendor_43,Manager_5
+2024-09-27,Expense,9803.67,Equipment,Sales,8968.17,835.5,TXN40968,Vendor_28,Manager_5
+2024-09-27,Expense,140288.27,Salaries,HR,135651.56,4636.71,TXN71039,Vendor_9,Manager_3
+2024-09-27,Expense,14812.36,Professional Services,Engineering,16066.3,-1253.94,TXN85511,Vendor_11,Manager_2
+2024-09-27,Expense,11503.78,Miscellaneous,Marketing,12434.9,-931.12,TXN32522,Vendor_23,Manager_9
+2024-09-27,Expense,14863.19,Travel,Operations,14153.81,709.38,TXN98095,Vendor_25,Manager_7
+2024-09-27,Expense,146163.52,Salaries,Sales,135588.97,10574.55,TXN79516,Vendor_3,Manager_5
+2024-09-27,Expense,4837.19,Professional Services,Sales,4989.77,-152.58,TXN95623,Vendor_1,Manager_4
+2024-09-27,Expense,14267.45,Miscellaneous,HR,14640.22,-372.77,TXN58114,Vendor_31,Manager_5
+2024-09-27,Expense,5872.32,Equipment,Sales,5897.31,-24.98,TXN27725,Vendor_12,Manager_6
+2024-09-27,Expense,3134.41,Professional Services,Sales,3165.57,-31.16,TXN98377,Vendor_35,Manager_9
+2024-09-27,Expense,19107.01,Equipment,Marketing,17583.78,1523.23,TXN54843,Vendor_40,Manager_7
+2024-09-27,Expense,169003.69,Salaries,HR,161208.04,7795.64,TXN12045,Vendor_41,Manager_2
+2024-09-27,Revenue,282207.89,Utilities,Marketing,225766.32,56441.58,TXN42135,Vendor_14,Manager_6
+2024-09-27,Expense,78996.19,Marketing,HR,76913.15,2083.04,TXN75106,Vendor_16,Manager_4
+2024-09-27,Expense,18096.51,Office Rent,Marketing,19652.99,-1556.48,TXN85542,Vendor_10,Manager_1
+2024-09-27,Expense,47612.17,Marketing,Marketing,48207.04,-594.87,TXN21783,Vendor_13,Manager_3
+2024-09-27,Expense,63661.24,Marketing,Operations,58958.06,4703.18,TXN91501,Vendor_25,Manager_7
+2024-09-27,Investment,71785.65,Miscellaneous,Operations,71785.65,0.0,TXN31719,Vendor_49,Manager_6
+2024-09-27,Investment,10872.57,Equipment,Sales,10872.57,0.0,TXN66132,Vendor_26,Manager_2
+2024-09-27,Investment,45672.78,Travel,Engineering,45672.78,0.0,TXN95277,Vendor_41,Manager_4
+2024-09-27,Expense,17653.3,Software/Tools,Marketing,17434.28,219.01,TXN81420,Vendor_25,Manager_3
+2024-09-27,Investment,46831.46,Utilities,Operations,46831.46,0.0,TXN34923,Vendor_31,Manager_7
+2024-09-27,Expense,157512.82,Salaries,Finance,149463.81,8049.01,TXN15905,Vendor_5,Manager_4
+2024-09-27,Expense,7060.99,Professional Services,Operations,7102.89,-41.9,TXN68796,Vendor_43,Manager_2
+2024-09-27,Expense,11154.77,Professional Services,Marketing,11218.48,-63.71,TXN17114,Vendor_23,Manager_9
+2024-09-27,Investment,70069.89,Miscellaneous,Operations,70069.89,0.0,TXN22534,Vendor_33,Manager_2
+2024-09-27,Investment,92244.07,Travel,Engineering,92244.07,0.0,TXN47892,Vendor_30,Manager_6
+2024-09-27,Investment,12272.91,Office Rent,Engineering,12272.91,0.0,TXN66600,Vendor_5,Manager_3
+2024-09-27,Expense,3464.88,Utilities,Marketing,3240.96,223.93,TXN62807,Vendor_31,Manager_3
+2024-09-27,Revenue,429630.7,Software/Tools,Marketing,343704.56,85926.14,TXN34406,Vendor_32,Manager_4
+2024-09-27,Expense,14810.76,Professional Services,Operations,14386.39,424.37,TXN12896,Vendor_32,Manager_1
+2024-09-27,Expense,8878.99,Equipment,Finance,8034.11,844.89,TXN48696,Vendor_3,Manager_9
+2024-09-27,Revenue,177184.82,Salaries,HR,141747.86,35436.96,TXN62096,Vendor_1,Manager_3
+2024-10-27,Investment,28058.01,Training,Finance,28058.01,0.0,TXN35860,Vendor_28,Manager_7
+2024-10-27,Expense,6603.2,Software/Tools,Finance,7176.12,-572.92,TXN32664,Vendor_39,Manager_2
+2024-10-27,Investment,95098.92,Office Rent,Sales,95098.92,0.0,TXN42872,Vendor_20,Manager_8
+2024-10-27,Investment,52985.22,Miscellaneous,Finance,52985.22,0.0,TXN87925,Vendor_20,Manager_8
+2024-10-27,Expense,19040.47,Office Rent,Engineering,18860.84,179.64,TXN24698,Vendor_45,Manager_3
+2024-10-27,Expense,13069.92,Software/Tools,Engineering,13394.48,-324.56,TXN29371,Vendor_8,Manager_2
+2024-10-27,Expense,19949.49,Miscellaneous,Finance,20972.53,-1023.05,TXN29680,Vendor_13,Manager_9
+2024-10-27,Expense,11839.23,Software/Tools,Operations,12736.34,-897.11,TXN49804,Vendor_37,Manager_7
+2024-10-27,Expense,76306.62,Marketing,Engineering,80085.95,-3779.33,TXN88743,Vendor_9,Manager_4
+2024-10-27,Expense,3862.02,Training,HR,4090.12,-228.1,TXN51120,Vendor_47,Manager_8
+2024-10-27,Investment,85242.06,Salaries,HR,85242.06,0.0,TXN76492,Vendor_4,Manager_1
+2024-10-27,Revenue,338293.92,Travel,Sales,270635.14,67658.78,TXN61317,Vendor_20,Manager_2
+2024-10-27,Expense,13574.28,Utilities,Marketing,14844.71,-1270.43,TXN62736,Vendor_22,Manager_5
+2024-10-27,Revenue,176091.29,Utilities,Engineering,140873.03,35218.26,TXN40802,Vendor_16,Manager_1
+2024-10-27,Investment,70940.79,Software/Tools,HR,70940.79,0.0,TXN45539,Vendor_10,Manager_8
+2024-10-27,Revenue,58794.16,Salaries,Operations,47035.33,11758.83,TXN26418,Vendor_29,Manager_8
+2024-10-27,Expense,60700.62,Marketing,HR,64590.23,-3889.61,TXN51135,Vendor_42,Manager_3
+2024-10-27,Revenue,405909.53,Marketing,Sales,324727.63,81181.91,TXN70346,Vendor_29,Manager_6
+2024-10-27,Expense,9358.3,Training,Sales,9309.48,48.82,TXN22343,Vendor_48,Manager_4
+2024-10-27,Expense,18939.49,Miscellaneous,Engineering,17362.42,1577.07,TXN84327,Vendor_44,Manager_1
+2024-10-27,Revenue,248307.25,Equipment,Operations,198645.8,49661.45,TXN92546,Vendor_37,Manager_7
+2024-10-27,Expense,180601.48,Salaries,Marketing,171913.63,8687.85,TXN66221,Vendor_24,Manager_6
+2024-10-27,Expense,18815.37,Travel,Marketing,17217.19,1598.18,TXN97053,Vendor_12,Manager_7
+2024-10-27,Expense,15398.82,Professional Services,Marketing,14620.7,778.12,TXN50239,Vendor_9,Manager_8
+2024-10-27,Revenue,382335.46,Equipment,HR,305868.37,76467.09,TXN48022,Vendor_43,Manager_2
+2024-10-27,Expense,16967.81,Utilities,Sales,16388.41,579.4,TXN95587,Vendor_16,Manager_1
+2024-10-27,Revenue,440964.08,Training,Sales,352771.27,88192.82,TXN93222,Vendor_15,Manager_5
+2024-10-27,Expense,11671.79,Utilities,HR,11487.14,184.65,TXN26802,Vendor_35,Manager_4
+2024-11-26,Revenue,391097.75,Miscellaneous,Operations,312878.2,78219.55,TXN20943,Vendor_29,Manager_7
+2024-11-26,Expense,13154.07,Software/Tools,Marketing,14362.66,-1208.59,TXN81507,Vendor_16,Manager_6
+2024-11-26,Expense,14436.82,Utilities,Engineering,14030.27,406.54,TXN84536,Vendor_22,Manager_7
+2024-11-26,Expense,27258.88,Office Rent,Sales,26645.97,612.91,TXN60450,Vendor_20,Manager_1
+2024-11-26,Investment,60980.66,Software/Tools,Engineering,60980.66,0.0,TXN74236,Vendor_4,Manager_3
+2024-11-26,Revenue,51476.51,Utilities,Marketing,41181.21,10295.3,TXN91719,Vendor_40,Manager_9
+2024-11-26,Expense,7629.41,Miscellaneous,Engineering,7813.74,-184.33,TXN69351,Vendor_10,Manager_2
+2024-11-26,Expense,15380.14,Training,Operations,14702.22,677.92,TXN18058,Vendor_5,Manager_7
+2024-11-26,Expense,7678.03,Travel,Operations,7085.1,592.93,TXN57501,Vendor_6,Manager_4
+2024-11-26,Revenue,368694.88,Miscellaneous,HR,294955.9,73738.98,TXN77879,Vendor_36,Manager_6
+2024-11-26,Revenue,123111.79,Office Rent,HR,98489.43,24622.36,TXN43290,Vendor_16,Manager_6
+2024-11-26,Expense,26399.46,Office Rent,Finance,28182.28,-1782.81,TXN87497,Vendor_30,Manager_3
+2024-11-26,Expense,117247.5,Salaries,Engineering,119774.47,-2526.96,TXN83162,Vendor_34,Manager_4
+2024-11-26,Expense,72231.73,Marketing,Engineering,67888.19,4343.55,TXN78155,Vendor_4,Manager_8
+2024-11-26,Expense,3162.78,Software/Tools,Finance,3235.68,-72.9,TXN13485,Vendor_41,Manager_4
+2024-11-26,Expense,40632.64,Marketing,Engineering,40185.05,447.59,TXN73179,Vendor_11,Manager_9
+2024-11-26,Expense,5102.02,Training,Operations,4739.35,362.68,TXN56857,Vendor_17,Manager_6
+2024-11-26,Expense,16188.52,Software/Tools,HR,14772.53,1415.99,TXN38855,Vendor_32,Manager_4
+2024-11-26,Expense,7482.42,Equipment,Engineering,7643.33,-160.91,TXN26549,Vendor_39,Manager_3
+2024-11-26,Expense,138275.94,Salaries,Engineering,131024.75,7251.18,TXN75573,Vendor_28,Manager_5
+2024-11-26,Expense,84927.29,Salaries,Finance,87996.33,-3069.04,TXN18511,Vendor_9,Manager_1
