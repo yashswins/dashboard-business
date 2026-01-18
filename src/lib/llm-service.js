@@ -1,20 +1,51 @@
-// Support both Ollama (local) and OpenAI (production)
-// Available local models: gemma3:12b, llama3.1:8b, deepseek-r1:14b, gpt-oss:20b
-// llama3.1:8b is recommended for conversational tasks - good balance of speed and quality
-const USE_OPENAI = process.env.USE_OPENAI === 'true';
+// Free Ollama Gateway API for production (no API key required for basic usage)
+// Falls back to local Ollama for development
+const OLLAMA_GATEWAY_URL = 'https://ollama-gateway.freeleakhub.com/v1/chat/completions';
+const OLLAMA_GATEWAY_MODEL = process.env.OLLAMA_GATEWAY_MODEL || 'llama3.1:8b';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3.1:8b';
-const FALLBACK_MESSAGE = "Thanks for the details. We'll review and follow up with a tailored dashboard proposal.";
+const FALLBACK_MESSAGE = "Thanks for sharing! I'd love to help you create the perfect dashboard. Could you tell me more about what insights you're hoping to get from your data?";
 
 export async function generateLLMResponse(systemPrompt, messages) {
+  // Try free Ollama Gateway first (works in production without API key)
   try {
-    if (USE_OPENAI && process.env.OPENAI_API_KEY) {
-      return await callOpenAI(systemPrompt, messages);
-    }
+    return await callOllamaGateway(systemPrompt, messages);
+  } catch (error) {
+    console.error('Ollama Gateway error:', error);
+  }
+
+  // Fall back to local Ollama for development
+  try {
     return await callOllama(systemPrompt, messages);
   } catch (error) {
-    console.error('LLM error:', error);
+    console.error('Local Ollama error (is it running?):', error);
     return FALLBACK_MESSAGE;
   }
+}
+
+async function callOllamaGateway(systemPrompt, messages) {
+  const response = await fetch(OLLAMA_GATEWAY_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: OLLAMA_GATEWAY_MODEL,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        ...messages.map(m => ({ role: m.role, content: m.content }))
+      ],
+      stream: false,
+      max_tokens: 500
+    })
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => '');
+    throw new Error(`Ollama Gateway request failed: ${response.status} ${errorText}`);
+  }
+
+  const data = await response.json();
+  return data.choices?.[0]?.message?.content || FALLBACK_MESSAGE;
 }
 
 async function callOllama(systemPrompt, messages) {
@@ -42,30 +73,4 @@ async function callOllama(systemPrompt, messages) {
 
   const data = await response.json();
   return data.message?.content || FALLBACK_MESSAGE;
-}
-
-async function callOpenAI(systemPrompt, messages) {
-  const response = await fetch('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
-    },
-    body: JSON.stringify({
-      model: 'gpt-4',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        ...messages
-      ],
-      temperature: 0.7,
-      max_tokens: 500
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error('OpenAI request failed');
-  }
-
-  const data = await response.json();
-  return data.choices[0].message.content;
 }
