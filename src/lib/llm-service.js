@@ -1,16 +1,18 @@
-// Free Ollama Gateway API for production (no API key required for basic usage)
-// Falls back to local Ollama for development
-const OLLAMA_GATEWAY_URL = 'https://ollama-gateway.freeleakhub.com/v1/chat/completions';
-const OLLAMA_GATEWAY_MODEL = process.env.OLLAMA_GATEWAY_MODEL || 'llama3.1:8b';
+// Groq API for fast, free LLM inference
+// Get your free API key at https://console.groq.com
+const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'llama3.1:8b';
 const FALLBACK_MESSAGE = "Thanks for sharing! I'd love to help you create the perfect dashboard. Could you tell me more about what insights you're hoping to get from your data?";
 
 export async function generateLLMResponse(systemPrompt, messages) {
-  // Try free Ollama Gateway first (works in production without API key)
-  try {
-    return await callOllamaGateway(systemPrompt, messages);
-  } catch (error) {
-    console.error('Ollama Gateway error:', error);
+  // Use Groq API if key is available (free tier, fast)
+  if (process.env.GROQ_API_KEY) {
+    try {
+      return await callGroq(systemPrompt, messages);
+    } catch (error) {
+      console.error('Groq API error:', error);
+    }
   }
 
   // Fall back to local Ollama for development
@@ -22,26 +24,28 @@ export async function generateLLMResponse(systemPrompt, messages) {
   }
 }
 
-async function callOllamaGateway(systemPrompt, messages) {
-  const response = await fetch(OLLAMA_GATEWAY_URL, {
+async function callGroq(systemPrompt, messages) {
+  const response = await fetch(GROQ_API_URL, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${process.env.GROQ_API_KEY}`
     },
     body: JSON.stringify({
-      model: OLLAMA_GATEWAY_MODEL,
+      model: GROQ_MODEL,
       messages: [
         { role: 'system', content: systemPrompt },
         ...messages.map(m => ({ role: m.role, content: m.content }))
       ],
-      stream: false,
-      max_tokens: 500
+      max_tokens: 500,
+      temperature: 0.7
     })
   });
 
   if (!response.ok) {
-    const errorText = await response.text().catch(() => '');
-    throw new Error(`Ollama Gateway request failed: ${response.status} ${errorText}`);
+    const errorData = await response.json().catch(() => ({}));
+    console.error('Groq API error:', response.status, errorData);
+    throw new Error(`Groq request failed: ${response.status}`);
   }
 
   const data = await response.json();
