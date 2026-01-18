@@ -52,7 +52,7 @@ export default function ChatInterface() {
   const [showContactForm, setShowContactForm] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [suggestedCharts, setSuggestedCharts] = useState([]);
-  const messagesEndRef = useRef(null);
+  const messagesContainerRef = useRef(null);
 
   const isFinalStage = showContactForm || conversationStage === 'lead_capture';
   const hasConversation = messages.some((message) => message.role === 'user');
@@ -61,9 +61,12 @@ export default function ChatInterface() {
     [messages, fileAnalysis, hasConversation]
   );
 
-  // Auto-scroll to bottom when messages change
+  // Auto-scroll to bottom of chat container when messages change
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const container = messagesContainerRef.current;
+    if (container) {
+      container.scrollTop = container.scrollHeight;
+    }
   }, [messages, isLoading]);
 
   const handleSkipToContact = () => {
@@ -185,7 +188,7 @@ export default function ChatInterface() {
   return (
     <div className="glass-card-dark p-6 md:p-8 rounded-3xl">
       {/* Messages */}
-      <div className="space-y-4 mb-6 min-h-[400px] max-h-[500px] overflow-y-auto pr-2 scrollbar-thin">
+      <div ref={messagesContainerRef} className="space-y-4 mb-6 min-h-[400px] max-h-[500px] overflow-y-auto pr-2 scrollbar-thin">
         {messages.map((msg, idx) => (
           <MessageBubble key={idx} message={msg} dark />
         ))}
@@ -200,7 +203,6 @@ export default function ChatInterface() {
             </div>
           </div>
         )}
-        <div ref={messagesEndRef} />
       </div>
 
       {/* File Upload (show when appropriate) */}
