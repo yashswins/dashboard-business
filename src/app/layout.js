@@ -42,7 +42,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'r2rZUV0ttdTCAGviNUlt3q6mWUmEFwoghaHwEFy0WqQ',
+    google: 's6CJ37jOmsRf3NxtxYNyqltyUu0PawnIVGaWBRMf_gc',
   },
 };
 
