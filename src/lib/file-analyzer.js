@@ -90,10 +90,15 @@ Recommended visualizations:
 ${recommendations.map(r => `- ${r.type}: ${r.description}`).join('\n')}
   `.trim();
 
+  // Get top 5 rows as sample data for LLM analysis
+  const sampleData = data.slice(0, 5);
+
   return {
     rowCount,
     columnCount: columns.length,
-    columns: columnAnalysis,
+    columns, // Just column names as strings
+    columnAnalysis, // Detailed analysis per column
+    sampleData, // Top 5 rows for LLM context
     recommendations,
     summary
   };

@@ -25,12 +25,30 @@ export async function POST(request) {
   return NextResponse.json({ message: llmResponse, nextStage, showContactForm, suggestedCharts });
 }
 
+// Build a concise data context for LLM (columns + top 5 rows only)
+function buildDataContext(fileAnalysis) {
+  if (!fileAnalysis) return 'No data file was uploaded.';
+
+  const columns = Array.isArray(fileAnalysis.columns) ? fileAnalysis.columns : [];
+  const sampleData = Array.isArray(fileAnalysis.sampleData) ? fileAnalysis.sampleData : [];
+
+  let context = `Data file: ${fileAnalysis.rowCount || 0} rows, ${fileAnalysis.columnCount || 0} columns.\n`;
+  context += `Columns: ${columns.join(', ')}\n`;
+
+  if (sampleData.length > 0) {
+    context += `\nSample data (first ${sampleData.length} rows):\n`;
+    context += JSON.stringify(sampleData, null, 2);
+  }
+
+  return context;
+}
+
 async function generateChartSuggestions(messages, fileAnalysis) {
+  const dataContext = buildDataContext(fileAnalysis);
+
   const chartPrompt = `Based on the conversation, suggest exactly 5 specific chart types that would be most valuable for this client's dashboard.
 
-${fileAnalysis ? `The client uploaded data with these columns: ${fileAnalysis.columns?.join(', ') || 'unknown'}
-Data has ${fileAnalysis.rowCount || 0} rows and ${fileAnalysis.columnCount || 0} columns.
-${fileAnalysis.summary ? `Data summary: ${JSON.stringify(fileAnalysis.summary)}` : ''}` : 'No data file was uploaded.'}
+${dataContext}
 
 Return ONLY a JSON array of 5 chart suggestions, each as a short string (3-6 words). Example format:
 ["Revenue trend over time", "Sales by region map", "Customer segment breakdown", "Monthly growth KPIs", "Product performance ranking"]
@@ -85,10 +103,11 @@ Subtly mention that sharing sample data later will help us prepare better recomm
 If the user says yes, acknowledge and tell them to upload the file below in one short sentence.
 If the user says no, that's okay - provide a brief, high-level recommendation and end with: "You can contact us to go deeper. If you share sample data before our call, we can come even more prepared!"`,
 
-    file_analysis: `You have analyzed the client's data file. The analysis shows:
-${JSON.stringify(fileAnalysis, null, 2)}
+    file_analysis: `You have analyzed the client's data file. Here's what we found:
 
-Provide a brief, plain-language summary (2-3 bullet points max).
+${buildDataContext(fileAnalysis)}
+
+Provide a brief, plain-language summary (2-3 bullet points max) about what insights could be drawn from this data.
 Keep it short and practical, and end with: "Great - with this data, we can hit the ground running on our consultation call!"`,
 
     recommendation: `Provide a structured recommendation based on the conversation.
