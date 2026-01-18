@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://blueweave.vercel.app';
+  const baseUrl = 'https://bluweave-five.vercel.app';
 
   return [
     {

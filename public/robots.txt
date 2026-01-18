@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://blueweave.vercel.app/sitemap.xml
+Sitemap: https://bluweave-five.vercel.app/sitemap.xml

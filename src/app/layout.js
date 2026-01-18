@@ -8,7 +8,7 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  metadataBase: new URL('https://blueweave.vercel.app'),
+  metadataBase: new URL('https://bluweave-five.vercel.app'),
   title: {
     default: 'BlueWeave | Custom Dashboard Solutions',
     template: '%s | BlueWeave',
@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://blueweave.vercel.app',
+    url: 'https://bluweave-five.vercel.app',
     siteName: 'BlueWeave',
     title: 'BlueWeave | Custom Dashboard Solutions',
     description: 'Get tailored analytics dashboards built for your business needs. Interactive visualizations, real-time insights, and automated reporting.',
