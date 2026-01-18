@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import MessageBubble from './MessageBubble';
 import FileUpload from './FileUpload';
 import ContactForm from './ContactForm';
@@ -10,14 +10,6 @@ const INITIAL_MESSAGE = {
   content: "Hi! I'm here to help you explore what kind of custom dashboard we can build for your business.\n\nTo get started, could you tell me:\n1. What industry or business area are you in?\n2. What kind of data do you currently have?"
 };
 
-const DEFAULT_CHARTS = [
-  'KPI summary cards',
-  'Time series trend',
-  'Category comparison bar chart',
-  'Top performers ranking',
-  'Variance or budget vs actual view'
-];
-
 const SUMMARY_IGNORE_PATTERN = /^uploaded a sample data file/i;
 
 const normalizeText = (value) => (value || '').replace(/\s+/g, ' ').trim();
@@ -26,8 +18,6 @@ const truncateText = (value, maxLength) => {
   if (!value || value.length <= maxLength) return value;
   return value.slice(0, Math.max(0, maxLength - 3)) + '...';
 };
-
-const uniqueList = (items) => Array.from(new Set(items.filter(Boolean)));
 
 const getUserMessages = (messages) => messages
   .filter((msg) => msg.role === 'user')
@@ -45,49 +35,13 @@ const buildConversationSummary = (messages, fileAnalysis) => {
 
   if (fileAnalysis?.rowCount && fileAnalysis?.columnCount) {
     summaryLines.push(`Data snapshot: ${fileAnalysis.rowCount} rows, ${fileAnalysis.columnCount} columns.`);
+    if (fileAnalysis.columns?.length) {
+      summaryLines.push(`Columns: ${fileAnalysis.columns.join(', ')}`);
+    }
   }
 
   if (!summaryLines.length) return '';
   return summaryLines.join('\n');
-};
-
-const inferChartsFromConversation = (messages) => {
-  const text = getUserMessages(messages).join(' ').toLowerCase();
-  if (!text) return [];
-
-  const charts = [];
-  if (/(trend|over time|time series|monthly|weekly|daily|timeline)/.test(text)) {
-    charts.push('Time series trend');
-  }
-  if (/(category|segment|breakdown|by channel|by region|compare)/.test(text)) {
-    charts.push('Category comparison bar chart');
-  }
-  if (/(region|geo|location|country|city)/.test(text)) {
-    charts.push('Geo distribution map');
-  }
-  if (/(conversion|funnel|pipeline|drop-off)/.test(text)) {
-    charts.push('Conversion funnel');
-  }
-  if (/(retention|churn|cohort)/.test(text)) {
-    charts.push('Cohort or retention analysis');
-  }
-  if (/(budget|variance|actual|forecast)/.test(text)) {
-    charts.push('Variance or budget vs actual view');
-  }
-
-  return charts;
-};
-
-const buildPotentialCharts = (messages, fileAnalysis) => {
-  if (Array.isArray(fileAnalysis?.recommendations) && fileAnalysis.recommendations.length) {
-    return fileAnalysis.recommendations.map((rec) =>
-      `${rec.type}${rec.description ? ` - ${rec.description}` : ''}`
-    );
-  }
-
-  const inferred = inferChartsFromConversation(messages);
-  const combined = uniqueList([...inferred, ...DEFAULT_CHARTS]);
-  return combined.slice(0, 5);
 };
 
 export default function ChatInterface() {
@@ -97,16 +51,20 @@ export default function ChatInterface() {
   const [fileAnalysis, setFileAnalysis] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [suggestedCharts, setSuggestedCharts] = useState([]);
+  const messagesEndRef = useRef(null);
+
   const isFinalStage = showContactForm || conversationStage === 'lead_capture';
   const hasConversation = messages.some((message) => message.role === 'user');
   const conversationSummary = useMemo(
     () => (hasConversation ? buildConversationSummary(messages, fileAnalysis) : ''),
     [messages, fileAnalysis, hasConversation]
   );
-  const potentialCharts = useMemo(
-    () => (hasConversation ? buildPotentialCharts(messages, fileAnalysis) : []),
-    [messages, fileAnalysis, hasConversation]
-  );
+
+  // Auto-scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages, isLoading]);
 
   const handleSkipToContact = () => {
     if (isFinalStage) return;
@@ -150,6 +108,11 @@ export default function ChatInterface() {
 
       setMessages(prev => [...prev, { role: 'assistant', content: data.message }]);
       setConversationStage(data.nextStage);
+
+      // Store LLM-generated chart suggestions if available
+      if (data.suggestedCharts?.length) {
+        setSuggestedCharts(data.suggestedCharts);
+      }
 
       if (data.showContactForm) {
         setShowContactForm(true);
@@ -201,6 +164,11 @@ export default function ChatInterface() {
       setMessages(prev => [...prev, { role: 'assistant', content: data.message }]);
       setConversationStage(data.nextStage);
 
+      // Store LLM-generated chart suggestions if available
+      if (data.suggestedCharts?.length) {
+        setSuggestedCharts(data.suggestedCharts);
+      }
+
       if (data.showContactForm) {
         setShowContactForm(true);
       }
@@ -232,6 +200,7 @@ export default function ChatInterface() {
             </div>
           </div>
         )}
+        <div ref={messagesEndRef} />
       </div>
 
       {/* File Upload (show when appropriate) */}
@@ -247,7 +216,8 @@ export default function ChatInterface() {
           <ContactForm
             dark
             conversationSummary={conversationSummary}
-            potentialCharts={potentialCharts}
+            potentialCharts={suggestedCharts}
+            fileAnalysis={fileAnalysis}
           />
         </div>
       )}

@@ -6,19 +6,21 @@ import { useForm } from 'react-hook-form';
 export default function ContactForm({
   dark = false,
   conversationSummary = '',
-  potentialCharts = []
+  potentialCharts = [],
+  fileAnalysis = null
 }) {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const hasConversationNotes = Boolean(conversationSummary) || potentialCharts.length > 0;
 
   const onSubmit = async (values) => {
     setErrorMessage('');
 
     const payload = { ...values };
+    // Include conversation data for internal use (not shown to user)
     if (conversationSummary) payload.conversationSummary = conversationSummary;
     if (potentialCharts.length > 0) payload.potentialCharts = potentialCharts;
+    if (fileAnalysis) payload.fileAnalysis = fileAnalysis;
 
     const response = await fetch('/api/submit-inquiry', {
       method: 'POST',
@@ -56,26 +58,28 @@ export default function ContactForm({
     <form onSubmit={handleSubmit(onSubmit)} className={`p-6 rounded-2xl space-y-4 ${dark ? 'bg-white/5 border border-white/10' : 'glass-card'}`}>
       <h3 className={`text-lg font-semibold mb-4 ${dark ? 'text-white' : ''}`}>Get Your Custom Proposal</h3>
 
-      {hasConversationNotes && (
-        <div className={`rounded-2xl border ${dark ? 'border-white/10 bg-white/5' : 'border-black/5 bg-white'} p-4 text-sm`}>
-          <p className={`text-xs uppercase tracking-[0.25em] ${dark ? 'text-white/50' : 'text-apple-gray'}`}>Conversation notes</p>
-          {conversationSummary && (
-            <p className={`mt-2 whitespace-pre-line ${dark ? 'text-white/70' : 'text-apple-gray'}`}>
-              {conversationSummary}
+      {/* Chart Suggestions Preview */}
+      {potentialCharts.length > 0 && (
+        <div className={`rounded-2xl border ${dark ? 'border-white/10 bg-white/5' : 'border-[#007AFF]/20 bg-[#007AFF]/5'} p-4`}>
+          <div className="flex items-center gap-2 mb-3">
+            <svg className={`w-5 h-5 ${dark ? 'text-[#007AFF]' : 'text-[#007AFF]'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+            <p className={`text-sm font-medium ${dark ? 'text-white' : 'text-gray-900'}`}>
+              Based on our conversation, here are some charts we could build for you:
             </p>
-          )}
-          {potentialCharts.length > 0 && (
-            <div className="mt-3">
-              <p className={`text-xs uppercase tracking-[0.2em] ${dark ? 'text-white/50' : 'text-apple-gray'}`}>
-                Potential charts
-              </p>
-              <ul className={`mt-2 list-disc list-inside space-y-1 ${dark ? 'text-white/60' : 'text-apple-gray'}`}>
-                {potentialCharts.map((chart, idx) => (
-                  <li key={`${chart}-${idx}`}>{chart}</li>
-                ))}
-              </ul>
-            </div>
-          )}
+          </div>
+          <ul className={`space-y-1.5 mb-3 ${dark ? 'text-white/70' : 'text-gray-600'}`}>
+            {potentialCharts.map((chart, idx) => (
+              <li key={`${chart}-${idx}`} className="flex items-center gap-2 text-sm">
+                <span className={`w-1.5 h-1.5 rounded-full ${dark ? 'bg-[#007AFF]' : 'bg-[#007AFF]'}`} />
+                {chart}
+              </li>
+            ))}
+          </ul>
+          <p className={`text-xs ${dark ? 'text-white/50' : 'text-gray-500'} italic`}>
+            This is just a starting point. Book a consultation and we will come prepared with a complete analysis and more tailored chart recommendations.
+          </p>
         </div>
       )}
 
