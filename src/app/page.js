@@ -4,9 +4,39 @@ import DemoShowcase from '@/components/landing/DemoShowcase';
 import HowItWorks from '@/components/landing/HowItWorks';
 import CTASection from '@/components/landing/CTASection';
 
+export const metadata = {
+  title: 'BlueWeave | Custom Dashboard Solutions',
+  description: 'Transform your business data with custom analytics dashboards. Interactive visualizations, real-time insights, and automated reporting tailored to your needs.',
+  openGraph: {
+    title: 'BlueWeave | Custom Dashboard Solutions',
+    description: 'Transform your business data with custom analytics dashboards. Interactive visualizations, real-time insights, and automated reporting tailored to your needs.',
+    url: 'https://bluweave-five.vercel.app',
+    type: 'website',
+  },
+};
+
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'BlueWeave',
+    url: 'https://bluweave-five.vercel.app',
+    description: 'Custom dashboard and data visualization solutions for businesses',
+    serviceType: ['Business Analytics', 'Data Visualization', 'Dashboard Development'],
+    areaServed: 'Worldwide',
+    brand: {
+      '@type': 'Brand',
+      name: 'BlueWeave'
+    }
+  };
+
   return (
-    <div className="relative isolate overflow-hidden text-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="relative isolate overflow-hidden text-white">
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0f0f23] via-[#1a1a3e] to-[#0d1b2a]" />
         <div className="absolute -top-40 left-[-10%] w-[720px] h-[720px] bg-[#007AFF] rounded-full blur-[160px] opacity-25" />
@@ -27,5 +57,6 @@ export default function Home() {
       <HowItWorks />
       <CTASection />
     </div>
+    </>
   );
 }
