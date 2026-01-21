@@ -10,24 +10,24 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   metadataBase: new URL('https://bluweave-five.vercel.app'),
   title: {
-    default: 'BlueWeave | Custom Dashboard Solutions',
-    template: '%s | BlueWeave',
+    default: 'Bluweave | Custom Dashboard Solutions',
+    template: '%s | Bluweave',
   },
   description: 'Get tailored analytics dashboards built for your business needs. Interactive visualizations, real-time insights, and automated reporting.',
   keywords: ['dashboard', 'analytics', 'data visualization', 'business intelligence', 'custom dashboards', 'data analytics', 'reporting'],
-  authors: [{ name: 'BlueWeave' }],
-  creator: 'BlueWeave',
+  authors: [{ name: 'Bluweave' }],
+  creator: 'Bluweave',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://bluweave-five.vercel.app',
-    siteName: 'BlueWeave',
-    title: 'BlueWeave | Custom Dashboard Solutions',
+    siteName: 'Bluweave',
+    title: 'Bluweave | Custom Dashboard Solutions',
     description: 'Get tailored analytics dashboards built for your business needs. Interactive visualizations, real-time insights, and automated reporting.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BlueWeave | Custom Dashboard Solutions',
+    title: 'Bluweave | Custom Dashboard Solutions',
     description: 'Get tailored analytics dashboards built for your business needs. Interactive visualizations, real-time insights, and automated reporting.',
   },
   robots: {

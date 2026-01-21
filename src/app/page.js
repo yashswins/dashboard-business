@@ -5,10 +5,10 @@ import HowItWorks from '@/components/landing/HowItWorks';
 import CTASection from '@/components/landing/CTASection';
 
 export const metadata = {
-  title: 'BlueWeave | Custom Dashboard Solutions',
+  title: 'Bluweave | Custom Dashboard Solutions',
   description: 'Transform your business data with custom analytics dashboards. Interactive visualizations, real-time insights, and automated reporting tailored to your needs.',
   openGraph: {
-    title: 'BlueWeave | Custom Dashboard Solutions',
+    title: 'Bluweave | Custom Dashboard Solutions',
     description: 'Transform your business data with custom analytics dashboards. Interactive visualizations, real-time insights, and automated reporting tailored to your needs.',
     url: 'https://bluweave-five.vercel.app',
     type: 'website',
@@ -19,14 +19,14 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'BlueWeave',
+    name: 'Bluweave',
     url: 'https://bluweave-five.vercel.app',
     description: 'Custom dashboard and data visualization solutions for businesses',
     serviceType: ['Business Analytics', 'Data Visualization', 'Dashboard Development'],
     areaServed: 'Worldwide',
     brand: {
       '@type': 'Brand',
-      name: 'BlueWeave'
+      name: 'Bluweave'
     }
   };
 
